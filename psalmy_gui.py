@@ -6,7 +6,7 @@ def buduj_psalmy():
     psalmylist = psalmy.readlines()
     for psalm in psalmylist:
         plik = psalm
-        for znak in [',','.','\n']:
+        for znak in [',','.','\n','?','!']:
             plik = plik.replace(znak,'')
         plikurl = "refreny_psalmow/" + plik
         print(plik)

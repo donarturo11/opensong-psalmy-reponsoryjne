@@ -7,7 +7,7 @@ def buduj_psalmy():
     for psalm in psalmylist:
         plik = psalm
         tytul = psalm
-        for znak in [',','.','\n']:
+        for znak in [',','.','\n','?','!']:
             plik = plik.replace(znak,'')
         for znak in ['.','\n']:
             tytul = tytul.replace(znak,'')
